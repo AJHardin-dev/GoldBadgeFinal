@@ -12,9 +12,9 @@ namespace _01Cafe.Lib
         public string Name { get; set; }
         public string Description { get; set; }
         public List<string> Ingredients { get; set; }
-        public decimal Price { get; set; }
+        public double Price { get; set; }
 
-        public MenuItem(int mealNumber, string name, string description, List<string> ingredients, decimal price)
+        public MenuItem(int mealNumber, string name, string description, List<string> ingredients, double price)
         {
             MealNumber = mealNumber;
             Name = name;

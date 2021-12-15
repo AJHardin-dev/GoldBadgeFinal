@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Challenge01UI
+namespace _03Badges.Lib
 {
-    internal class Program
+    public class BadgeRepo
     {
-        static void Main(string[] args)
-        {
-        }
+        Dictionary<int, Badge> _badgeRepo = new Dictionary<int, Badge>();
+
+
     }
 }

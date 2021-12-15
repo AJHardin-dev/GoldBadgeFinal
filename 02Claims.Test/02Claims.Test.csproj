@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{769E6B4E-2F79-402E-AC0F-699D1B04BD6C}</ProjectGuid>
+    <ProjectGuid>{8DF3651A-1958-4306-B0B2-1438A9805E1B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Challenge01.Tests</RootNamespace>
-    <AssemblyName>Challenge01.Tests</AssemblyName>
+    <RootNamespace>_02Claims.Test</RootNamespace>
+    <AssemblyName>02Claims.Test</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
