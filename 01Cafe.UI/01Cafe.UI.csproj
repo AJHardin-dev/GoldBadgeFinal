@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\01Cafe.Lib\01Cafe.Lib.csproj">
+      <Project>{8552a688-fdbf-46c2-b856-366847fa10c8}</Project>
+      <Name>01Cafe.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
