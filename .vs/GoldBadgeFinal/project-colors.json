@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9617526c-ceb2-4c02-b3b6-74f1c81cb303": {
+      "ProjectGuid": "9617526c-ceb2-4c02-b3b6-74f1c81cb303",
+      "DisplayName": "Challenge01UI",
+      "ColorIndex": 0
+    },
+    "769e6b4e-2f79-402e-ac0f-699d1b04bd6c": {
+      "ProjectGuid": "769e6b4e-2f79-402e-ac0f-699d1b04bd6c",
+      "DisplayName": "Challenge01.Tests",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
