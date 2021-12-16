@@ -1,0 +1,11 @@
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.UI\obj\Debug\01Cafe.UI.csproj.AssemblyReference.cache
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.UI\obj\Debug\01Cafe.UI.csproj.SuggestedBindingRedirects.cache
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.UI\obj\Debug\01Cafe.UI.csproj.CoreCompileInputs.cache
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.UI\bin\Debug\01Cafe.UI.exe.config
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.UI\bin\Debug\01Cafe.UI.exe
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.UI\bin\Debug\01Cafe.UI.pdb
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.UI\bin\Debug\01Cafe.Lib.dll
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.UI\bin\Debug\01Cafe.Lib.pdb
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.UI\obj\Debug\01Cafe.UI.csproj.CopyComplete
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.UI\obj\Debug\01Cafe.UI.exe
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.UI\obj\Debug\01Cafe.UI.pdb

@@ -1,0 +1,6 @@
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Lib\bin\Debug\01Cafe.Lib.dll
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Lib\bin\Debug\01Cafe.Lib.pdb
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Lib\obj\Debug\01Cafe.Lib.csproj.AssemblyReference.cache
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Lib\obj\Debug\01Cafe.Lib.csproj.CoreCompileInputs.cache
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Lib\obj\Debug\01Cafe.Lib.dll
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Lib\obj\Debug\01Cafe.Lib.pdb

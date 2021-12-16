@@ -9,15 +9,15 @@ namespace _01Cafe.UI
 {
     public class CafeUI
     {
-        private readonly MenuItemRepo _menuItemRepo = new MenuItemRepo();
+        static readonly MenuItemRepo _menuItemRepo = new MenuItemRepo();
                 
-        public void Main(string[] args)
+        static void Main(string[] args)
         {
             // seed
             RunProgram();
         }
 
-        public void RunProgram()
+        static void RunProgram()
         {
             DisplayWelcome();
 
@@ -45,14 +45,14 @@ namespace _01Cafe.UI
             }
         }
 
-        public void DisplayWelcome()
+        static void DisplayWelcome()
         {
             Console.Clear();
             Console.WriteLine("Welcome to the program, press a key to continue");
             Console.ReadKey();
         }
 
-        public void DisplayMenu()
+        static void DisplayMenu()
         {
             Console.Clear();
             Console.WriteLine("Menu\n\n" +
@@ -61,7 +61,7 @@ namespace _01Cafe.UI
                 "3 - See all items\n");
         }
 
-        public void DisplaySingleItem(int id)
+        static void DisplaySingleItem(int id)
         {
             string ingredients = "";
             foreach (string ing in _menuItemRepo.GetById(id).Ingredients)
@@ -76,7 +76,7 @@ namespace _01Cafe.UI
                 $"Price: {_menuItemRepo.GetById(id).Price}");
         }
 
-        public void AddItem()
+        static void AddItem()
         {
             Console.Clear();
             bool itemAdded = _menuItemRepo.CreateMenuItem();
@@ -85,7 +85,7 @@ namespace _01Cafe.UI
                 Console.WriteLine("Looks like something went wrong, try again later.");
         }
 
-        public void DeleteItem()
+        static void DeleteItem()
         {
             Console.Clear();
             Console.WriteLine("Enter the meal number to be removed:");

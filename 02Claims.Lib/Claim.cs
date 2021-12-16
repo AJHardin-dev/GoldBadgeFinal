@@ -23,6 +23,11 @@ namespace _02Claims.Lib
             Description = description;
             ClaimAmount = claimAmount;
             DateOfIncident = dateOfIncident;
+            DateOfClaim = DateTime.Now;
+            if (DateOfIncident.AddDays(30) > DateOfClaim)
+                IsValid = true;
+            else 
+                IsValid = false;
         }
         public Claim(int claimId, string claimType, string description, decimal claimAmount, DateTime dateOfIncident, DateTime dateOfClaim, bool isValid)
         {
