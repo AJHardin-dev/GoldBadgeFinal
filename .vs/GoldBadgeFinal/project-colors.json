@@ -10,7 +10,52 @@
       "ProjectGuid": "769e6b4e-2f79-402e-ac0f-699d1b04bd6c",
       "DisplayName": "Challenge01.Tests",
       "ColorIndex": 1
+    },
+    "cfe80723-e48a-4949-bf7d-9b025252382b": {
+      "ProjectGuid": "cfe80723-e48a-4949-bf7d-9b025252382b",
+      "DisplayName": "01Cafe.UI",
+      "ColorIndex": 2
+    },
+    "8552a688-fdbf-46c2-b856-366847fa10c8": {
+      "ProjectGuid": "8552a688-fdbf-46c2-b856-366847fa10c8",
+      "DisplayName": "01Cafe.Lib",
+      "ColorIndex": 3
+    },
+    "eb64fb0d-d162-405a-aa4e-53bf45fdac87": {
+      "ProjectGuid": "eb64fb0d-d162-405a-aa4e-53bf45fdac87",
+      "DisplayName": "01Cafe.Test",
+      "ColorIndex": 4
+    },
+    "57907441-466d-48aa-bab1-3212f9f9c095": {
+      "ProjectGuid": "57907441-466d-48aa-bab1-3212f9f9c095",
+      "DisplayName": "02Claims.UI",
+      "ColorIndex": 5
+    },
+    "86eaed7e-96f8-48fe-a816-c71de470a088": {
+      "ProjectGuid": "86eaed7e-96f8-48fe-a816-c71de470a088",
+      "DisplayName": "02Claims.Lib",
+      "ColorIndex": 6
+    },
+    "8df3651a-1958-4306-b0b2-1438a9805e1b": {
+      "ProjectGuid": "8df3651a-1958-4306-b0b2-1438a9805e1b",
+      "DisplayName": "02Claims.Test",
+      "ColorIndex": 7
+    },
+    "6d234869-abc3-40a0-bdc1-2189b1f3143a": {
+      "ProjectGuid": "6d234869-abc3-40a0-bdc1-2189b1f3143a",
+      "DisplayName": "03Badges.UI",
+      "ColorIndex": 8
+    },
+    "f12f33e0-1c8a-4d00-82a5-177496d81e68": {
+      "ProjectGuid": "f12f33e0-1c8a-4d00-82a5-177496d81e68",
+      "DisplayName": "03Badges.Lib",
+      "ColorIndex": 9
+    },
+    "636a7065-83f2-439a-a00e-6e088948b1e9": {
+      "ProjectGuid": "636a7065-83f2-439a-a00e-6e088948b1e9",
+      "DisplayName": "03Badges.Test",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 11
 }

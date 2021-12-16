@@ -9,8 +9,8 @@ namespace _01Cafe.UI
 {
     public class CafeUI
     {
-        
-        
+        private readonly MenuItemRepo _menuItemRepo = new MenuItemRepo();
+                
         public void Main(string[] args)
         {
             // seed
@@ -32,7 +32,7 @@ namespace _01Cafe.UI
                         AddItem();
                         break;
                     case "2":
-                        // delete
+                        DeleteItem();
                         break;
                     case "3":
                         // get all
@@ -50,62 +50,57 @@ namespace _01Cafe.UI
             Console.Clear();
             Console.WriteLine("Welcome to the program, press a key to continue");
             Console.ReadKey();
-            Console.Clear();
         }
 
         public void DisplayMenu()
         {
+            Console.Clear();
             Console.WriteLine("Menu\n\n" +
                 "1 - Add a meal item\n" +
                 "2 - Delete a meal item\n" +
                 "3 - See all items\n");
         }
 
+        public void DisplaySingleItem(int id)
+        {
+            string ingredients = "";
+            foreach (string ing in _menuItemRepo.GetById(id).Ingredients)
+            {
+                ingredients.Concat($"{ing} ");
+            }
+
+            Console.WriteLine($"Meal Number: {_menuItemRepo.GetById(id).MealNumber}\n" +
+                $"Name: {_menuItemRepo.GetById(id).Name}\n" +
+                $"Description: {_menuItemRepo.GetById(id).Description}\n" +
+                $"Ingredients: {ingredients}\n" +
+                $"Price: {_menuItemRepo.GetById(id).Price}");
+        }
+
         public void AddItem()
         {
             Console.Clear();
-            bool itemDone = false;
-
-            while(!itemDone)
-            {
-                Console.WriteLine("Add an item\n");
-                
-                Console.WriteLine("Enter a meal number:");
-                int userMealNumber = int.Parse(Console.ReadLine());
-                
-                Console.WriteLine("Enter meal name:");
-                string userName = Console.ReadLine();
-                
-                Console.WriteLine("Enter a description:");
-                string userDescription = Console.ReadLine();
-                
-                List<string> ingredients = GetIngredientList();
-
-                Console.WriteLine("Enter a price:");
-                double userPrice = double.Parse(Console.ReadLine());
-
-                // stopped here - all this bullshit should probably be in the repo
-            }
+            bool itemAdded = _menuItemRepo.CreateMenuItem();
+            
+            if (!itemAdded)
+                Console.WriteLine("Looks like something went wrong, try again later.");
         }
 
-        public List<string> GetIngredientList()
+        public void DeleteItem()
         {
-            List<string> userIngredients = new List<string>();
-
-            bool finished = false;
-            while(!finished)
+            Console.Clear();
+            Console.WriteLine("Enter the meal number to be removed:");
+            int userDeleteId = int.Parse(Console.ReadLine());
+            if (_menuItemRepo.GetById(userDeleteId) != null)
             {
-                Console.WriteLine("Enter an ingredient:");
-                userIngredients.Add(Console.ReadLine());
-
-                Console.WriteLine("Finished? (Y/N)");
-                string userFinished = Console.ReadLine();
-                if (userFinished == "Y" || userFinished == "y")
-                {
-                    finished = true;
-                }
+                DisplaySingleItem(userDeleteId);
+                Console.WriteLine("Delete item?  Y - Confirm delete / N - Cancel");
+                string conf = Console.ReadLine();
+                if (conf == "Y" || conf == "y")
+                    _menuItemRepo.DeleteById(userDeleteId);
             }
-            return userIngredients;
+            else
+                Console.WriteLine("No meal present with that number");
         }
+        
     }
 }
