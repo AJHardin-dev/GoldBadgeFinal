@@ -14,7 +14,12 @@ namespace _02Claims.Lib
         public decimal ClaimAmount { get; set; }
         public DateTime DateOfIncident { get; set; }
         public DateTime DateOfClaim { get; set; }
-        public bool IsValid { get; set; }
+        public bool IsValid()
+        {
+            if (DateOfIncident.AddDays(30) > DateOfClaim)
+                return true;
+            else return false;
+        }
 
         public Claim(int claimId, string claimType, string description, decimal claimAmount, DateTime dateOfIncident)
         {
@@ -24,12 +29,8 @@ namespace _02Claims.Lib
             ClaimAmount = claimAmount;
             DateOfIncident = dateOfIncident;
             DateOfClaim = DateTime.Now;
-            if (DateOfIncident.AddDays(30) > DateOfClaim)
-                IsValid = true;
-            else 
-                IsValid = false;
         }
-        public Claim(int claimId, string claimType, string description, decimal claimAmount, DateTime dateOfIncident, DateTime dateOfClaim, bool isValid)
+        public Claim(int claimId, string claimType, string description, decimal claimAmount, DateTime dateOfIncident, DateTime dateOfClaim)
         {
             ClaimId = claimId;
             ClaimType = claimType;
@@ -37,7 +38,6 @@ namespace _02Claims.Lib
             ClaimAmount = claimAmount;
             DateOfIncident = dateOfIncident;
             DateOfClaim = dateOfClaim;
-            IsValid = isValid;
         }
     }
 }

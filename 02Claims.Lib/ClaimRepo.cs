@@ -13,13 +13,36 @@ namespace _02Claims.Lib
         public bool CreateClaim(Claim claim)
         {
             _claims.Add(claim.ClaimId, claim);
-            
-            return false;
+
+            if(_claims.ContainsKey(claim.ClaimId))
+                return true;
+            else return false;
         }
 
         public bool CreateClaim()
         {
-            //get user input
+            Console.WriteLine("Create a new claim\n");
+
+            Console.WriteLine("Enter a claim ID:");
+            int userClaimID = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the claim type:");
+            string userClaimType = Console.ReadLine();
+
+            Console.WriteLine("Enter a claim description:");
+            string userClaimDescription = Console.ReadLine();
+
+            Console.WriteLine("Enter a claim amount:");
+            decimal userClaimAmount = Convert.ToDecimal(Console.ReadLine());
+
+            Console.WriteLine("Enter the date of the incident: (YYYY-MM-DD)");
+            string userDateOfIncident = Console.ReadLine();
+
+            Console.WriteLine("Enter the date of the claim: (YYYY-MM-DD)");
+            string userDateOfClaim = Console.ReadLine();    
+
+            // stopped here
+
             return false;
         }
 
