@@ -1,0 +1,17 @@
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Test\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Test\bin\Debug\01Cafe.Test.dll
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Test\bin\Debug\01Cafe.Test.pdb
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Test\bin\Debug\01Cafe.Lib.dll
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Test\bin\Debug\01Cafe.Lib.pdb
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Test\obj\Debug\01Cafe.Test.csproj.AssemblyReference.cache
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Test\obj\Debug\01Cafe.Test.csproj.CoreCompileInputs.cache
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Test\obj\Debug\01Cafe.Test.csproj.CopyComplete
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Test\obj\Debug\01Cafe.Test.dll
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\01Cafe.Test\obj\Debug\01Cafe.Test.pdb

@@ -17,76 +17,25 @@ namespace _01Cafe.Lib
                 _menuItems.Add(menuItem.MealNumber, menuItem);
                 return true;
             }
-            return false;
+            else return false;
         }
 
-        public bool CreateMenuItem()
+        public bool CreateMenuItem(int mealNumber, string mealName, string mealDescription, List<string> ingredients, double mealPrice)
         {
-            Console.WriteLine("Add an item to the menu\n");
-
-            int mealNumber = GetMealNumber();
-
-            Console.WriteLine("Enter meal name:");
-            string userName = Console.ReadLine();
-
-            Console.WriteLine("Enter a description:");
-            string userDescription = Console.ReadLine();
-
-            List<string> ingredients = GetIngredientList();
-
-            Console.WriteLine("Enter a price:");
-            double userPrice = double.Parse(Console.ReadLine());
-
-            MenuItem menuItem = new MenuItem(mealNumber, userName, userDescription, ingredients, userPrice);
-            
-            _menuItems.Add(menuItem.MealNumber, menuItem);
-
-            if (GetById(mealNumber) != null)
+            if (!_menuItems.ContainsKey(mealNumber))
+            {
+                MenuItem newItem = new MenuItem(mealNumber, mealName, mealDescription, ingredients, mealPrice);
+                _menuItems.Add(newItem.MealNumber, newItem);
                 return true;
-            else
-                return false;
-        }
-
-        public int GetMealNumber()
-        {
-            bool numValid = false;
-            int userMealNumber = 0;
-            while (!numValid)
-            {
-                Console.WriteLine("Enter a meal number:");
-                userMealNumber = int.Parse(Console.ReadLine());
-                
-                if (_menuItems.ContainsKey(userMealNumber))
-                    Console.WriteLine($"{userMealNumber} is already in use, please pick a different number.");
-                else
-                    numValid = true;
             }
-            return userMealNumber;
-        }
-
-        public List<string> GetIngredientList()
-        {
-            List<string> userIngredients = new List<string>();
-
-            bool finished = false;
-            while (!finished)
-            {
-                Console.WriteLine("Enter an ingredient:");
-                userIngredients.Add(Console.ReadLine());
-
-                Console.WriteLine("Finished? (Y/N)");
-                string userFinished = Console.ReadLine();
-                if (userFinished == "Y" || userFinished == "y")
-                    finished = true;
-            }
-            return userIngredients;
+            else return false;
         }
 
         public MenuItem GetById(int id)
         {
             if (_menuItems.ContainsKey(id))
                 return _menuItems[id];
-            return null;
+            else return null;
         }
 
         public Dictionary<int, MenuItem> GetAll()
@@ -94,7 +43,7 @@ namespace _01Cafe.Lib
             return _menuItems;
         }
 
-        // Update not needed according to assignment
+        // Update not needed according to assignment?
 
         public bool DeleteById(int id)
         {
@@ -103,7 +52,7 @@ namespace _01Cafe.Lib
                 _menuItems.Remove(id);
                 return true;
             }
-            return false;
+            else return false;
         }
     }
 }

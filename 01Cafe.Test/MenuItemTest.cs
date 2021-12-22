@@ -8,22 +8,56 @@ namespace _01Cafe.Test
     [TestClass]
     public class MenuItemTest
     {
+        MenuItemRepo TestRepo = new MenuItemRepo();
+
         [TestMethod]
-        public void CreateMenuItemTest()
+        public void TestCreateMenuItemMenuItem()
         {
             List<string> ingredients = new List<string>();
             ingredients.Add("hamburger patty");
             ingredients.Add("ketchup");
-            MenuItem menuItem = new MenuItem(
-                1,
-                "Burger", 
-                "Meat on bread",
-                ingredients,
-                .99);
+            MenuItem menuItem = new MenuItem(1, "Burger", "Meat on bread", ingredients, .99);
 
             bool expected = true;
-            //bool actual = CreateMenuItem(menuItem);
+            bool actual = TestRepo.CreateMenuItem(menuItem);
 
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void TestCreateMenuItemIndividualInput()
+        {
+            List<string> ingredients = new List<string>();
+            ingredients.Add("hamburger patty");
+            ingredients.Add("ketchup");
+
+            bool expected = true;
+            bool actual = TestRepo.CreateMenuItem(1, "Burger", "Meat on bread", ingredients, .99);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void TestGetById()
+        {
+            List<string> ingredients = new List<string>();
+            ingredients.Add("hamburger patty");
+            ingredients.Add("ketchup");
+            MenuItem menuItem = new MenuItem(1, "Burger", "Meat on bread", ingredients, .99);
+            TestRepo.CreateMenuItem(menuItem);
+
+            Assert.AreEqual(menuItem, TestRepo.GetById(menuItem.MealNumber));
+        }
+
+        [TestMethod]
+        public void TestGetAll()
+        {
+            List<string> ingredients = new List<string>();
+            ingredients.Add("hamburger patty");
+            ingredients.Add("ketchup");
+            TestRepo.CreateMenuItem(1, "Burger", "Meat on bread", ingredients, .99);
+            // Dictionary<int, MealItem> controlRepo = new Dictionary<int, MealItem>();
+            // Ugh I'm leaving this incomplete for now
         }
     }
 }

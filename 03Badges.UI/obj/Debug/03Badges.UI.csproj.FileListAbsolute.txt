@@ -1,0 +1,8 @@
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\03Badges.UI\bin\Debug\03Badges.UI.exe.config
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\03Badges.UI\bin\Debug\03Badges.UI.exe
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\03Badges.UI\bin\Debug\03Badges.UI.pdb
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\03Badges.UI\obj\Debug\03Badges.UI.csproj.AssemblyReference.cache
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\03Badges.UI\obj\Debug\03Badges.UI.csproj.SuggestedBindingRedirects.cache
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\03Badges.UI\obj\Debug\03Badges.UI.csproj.CoreCompileInputs.cache
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\03Badges.UI\obj\Debug\03Badges.UI.exe
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\03Badges.UI\obj\Debug\03Badges.UI.pdb

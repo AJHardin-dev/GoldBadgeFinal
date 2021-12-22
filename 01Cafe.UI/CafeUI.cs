@@ -13,7 +13,7 @@ namespace _01Cafe.UI
                 
         static void Main(string[] args)
         {
-            // seed
+            // seed - didn't happen
             RunProgram();
         }
 
@@ -35,7 +35,7 @@ namespace _01Cafe.UI
                         DeleteItem();
                         break;
                     case "3":
-                        // get all
+                        DisplayAllItems();
                         break;
                     default:
                         keepRunning = false;
@@ -79,10 +79,63 @@ namespace _01Cafe.UI
         static void AddItem()
         {
             Console.Clear();
-            bool itemAdded = _menuItemRepo.CreateMenuItem();
+            Console.WriteLine("Add an item to the menu\n");
+
+            Console.WriteLine("Enter a meal number:");
+            int userMealNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter meal name:");
+            string userName = Console.ReadLine();
+
+            Console.WriteLine("Enter a description:");
+            string userDescription = Console.ReadLine();
+
+            List<string> ingredients = GetIngredientList();
+
+            Console.WriteLine("Enter a price:");
+            double userPrice = double.Parse(Console.ReadLine());
             
+            bool itemAdded = _menuItemRepo.CreateMenuItem(userMealNumber, userName, userDescription, ingredients, userPrice);
+
             if (!itemAdded)
                 Console.WriteLine("Looks like something went wrong, try again later.");
+            else Console.WriteLine("Item added successfully.");
+        }
+
+        /* keeping this for now
+        public int GetMealNumber()
+        {
+            bool numValid = false;
+            int userMealNumber = 0;
+            while (!numValid)
+            {
+                Console.WriteLine("Enter a meal number:");
+                userMealNumber = int.Parse(Console.ReadLine());
+
+                if (_menuItems.ContainsKey(userMealNumber))
+                    Console.WriteLine($"{userMealNumber} is already in use, please pick a different number.");
+                else
+                    numValid = true;
+            }
+            return userMealNumber;
+        }*/
+
+        static List<string> GetIngredientList()
+        {
+            List<string> userIngredients = new List<string>();
+
+            bool finished = false;
+            while (!finished)
+            {
+                Console.WriteLine("Enter an ingredient:");
+                userIngredients.Add(Console.ReadLine());
+
+                Console.WriteLine("Finished? (Y/N)");
+                string userFinished = Console.ReadLine();
+                if (userFinished == "Y" || userFinished == "y")
+                    finished = true;
+            }
+            return userIngredients;
         }
 
         static void DeleteItem()
@@ -98,9 +151,20 @@ namespace _01Cafe.UI
                 if (conf == "Y" || conf == "y")
                     _menuItemRepo.DeleteById(userDeleteId);
             }
-            else
-                Console.WriteLine("No meal present with that number");
+            else Console.WriteLine("No meal present with that number");
         }
         
+        static void DisplayAllItems()
+        {
+            Console.Clear();
+            Console.WriteLine("Displaying all meals:\n");
+            foreach(var meal in _menuItemRepo.GetAll())
+            {
+                // Console.Clear();
+                DisplaySingleItem(meal.Key);
+                Console.WriteLine("Press a key for next record...\n\n\n");
+                Console.ReadKey();
+            }
+        }
     }
 }

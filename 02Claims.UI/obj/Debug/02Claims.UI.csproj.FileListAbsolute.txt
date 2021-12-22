@@ -1,0 +1,8 @@
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\02Claims.UI\bin\Debug\02Claims.UI.exe.config
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\02Claims.UI\bin\Debug\02Claims.UI.exe
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\02Claims.UI\bin\Debug\02Claims.UI.pdb
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\02Claims.UI\obj\Debug\02Claims.UI.csproj.AssemblyReference.cache
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\02Claims.UI\obj\Debug\02Claims.UI.csproj.SuggestedBindingRedirects.cache
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\02Claims.UI\obj\Debug\02Claims.UI.csproj.CoreCompileInputs.cache
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\02Claims.UI\obj\Debug\02Claims.UI.exe
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\02Claims.UI\obj\Debug\02Claims.UI.pdb

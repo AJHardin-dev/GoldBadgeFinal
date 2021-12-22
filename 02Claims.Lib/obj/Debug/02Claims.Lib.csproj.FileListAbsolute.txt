@@ -1,0 +1,6 @@
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\02Claims.Lib\bin\Debug\02Claims.Lib.dll
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\02Claims.Lib\bin\Debug\02Claims.Lib.pdb
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\02Claims.Lib\obj\Debug\02Claims.Lib.csproj.AssemblyReference.cache
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\02Claims.Lib\obj\Debug\02Claims.Lib.csproj.CoreCompileInputs.cache
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\02Claims.Lib\obj\Debug\02Claims.Lib.dll
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\02Claims.Lib\obj\Debug\02Claims.Lib.pdb
