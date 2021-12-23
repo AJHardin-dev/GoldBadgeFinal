@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\02Claims.Lib\02Claims.Lib.csproj">
+      <Project>{86eaed7e-96f8-48fe-a816-c71de470a088}</Project>
+      <Name>02Claims.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

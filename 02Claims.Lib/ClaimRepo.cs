@@ -19,31 +19,14 @@ namespace _02Claims.Lib
             else return false;
         }
 
-        public bool CreateClaim()
+        public bool CreateClaim(int claimId, string claimType, string description, double claimAmount, DateTime dateOfIncident, DateTime dateOfClaim)
         {
-            Console.WriteLine("Create a new claim\n");
-
-            Console.WriteLine("Enter a claim ID:");
-            int userClaimID = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Enter the claim type:");
-            string userClaimType = Console.ReadLine();
-
-            Console.WriteLine("Enter a claim description:");
-            string userClaimDescription = Console.ReadLine();
-
-            Console.WriteLine("Enter a claim amount:");
-            decimal userClaimAmount = Convert.ToDecimal(Console.ReadLine());
-
-            Console.WriteLine("Enter the date of the incident: (YYYY-MM-DD)");
-            string userDateOfIncident = Console.ReadLine();
-
-            Console.WriteLine("Enter the date of the claim: (YYYY-MM-DD)");
-            string userDateOfClaim = Console.ReadLine();    
-
-            // stopped here
-
-            return false;
+            if (!_claims.ContainsKey(claimId))
+            {
+                _claims.Add(claimId, new Claim(claimId, claimType, description, claimAmount, dateOfIncident, dateOfClaim));
+                return true;
+            }
+            else return false;
         }
 
         public Claim GetById(int id)
@@ -58,8 +41,16 @@ namespace _02Claims.Lib
             return _claims;
         }
 
-        public bool UpdateClaimById(int id)
+        public bool UpdateClaim(Claim claim)
         {
+            if (claim != null)
+            {
+                if (_claims.ContainsKey(claim.ClaimId))
+                {
+                    _claims[claim.ClaimId] = claim;
+                    return true;
+                }
+            }
             return false;
         }
 

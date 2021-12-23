@@ -41,14 +41,13 @@ namespace _01Cafe.UI
                         keepRunning = false;
                         break;
                 }
-
             }
         }
 
         static void DisplayWelcome()
         {
             Console.Clear();
-            Console.WriteLine("Welcome to the program, press a key to continue");
+            Console.WriteLine("Welcome to the Cafe (Challenge 01) program, press a key to continue");
             Console.ReadKey();
         }
 
@@ -58,7 +57,8 @@ namespace _01Cafe.UI
             Console.WriteLine("Menu\n\n" +
                 "1 - Add a meal item\n" +
                 "2 - Delete a meal item\n" +
-                "3 - See all items\n");
+                "3 - See all items\n" +
+                "Anything else - Quit\n");
         }
 
         static void DisplaySingleItem(int id)

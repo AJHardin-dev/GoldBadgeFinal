@@ -13,3 +13,5 @@ C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\02Claims.Test\obj\
 C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\02Claims.Test\obj\Debug\02Claims.Test.csproj.CopyComplete
 C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\02Claims.Test\obj\Debug\02Claims.Test.dll
 C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\02Claims.Test\obj\Debug\02Claims.Test.pdb
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\02Claims.Test\bin\Debug\02Claims.Lib.dll
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\02Claims.Test\bin\Debug\02Claims.Lib.pdb

@@ -11,7 +11,7 @@ namespace _02Claims.Lib
         public int ClaimId { get; set; }
         public string ClaimType { get; set; }
         public string Description { get; set; }
-        public decimal ClaimAmount { get; set; }
+        public double ClaimAmount { get; set; }
         public DateTime DateOfIncident { get; set; }
         public DateTime DateOfClaim { get; set; }
         public bool IsValid()
@@ -21,7 +21,7 @@ namespace _02Claims.Lib
             else return false;
         }
 
-        public Claim(int claimId, string claimType, string description, decimal claimAmount, DateTime dateOfIncident)
+        public Claim(int claimId, string claimType, string description, double claimAmount, DateTime dateOfIncident)
         {
             ClaimId = claimId;
             ClaimType = claimType;
@@ -30,7 +30,8 @@ namespace _02Claims.Lib
             DateOfIncident = dateOfIncident;
             DateOfClaim = DateTime.Now;
         }
-        public Claim(int claimId, string claimType, string description, decimal claimAmount, DateTime dateOfIncident, DateTime dateOfClaim)
+
+        public Claim(int claimId, string claimType, string description, double claimAmount, DateTime dateOfIncident, DateTime dateOfClaim)
         {
             ClaimId = claimId;
             ClaimType = claimType;

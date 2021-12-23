@@ -57,7 +57,7 @@ namespace _01Cafe.Test
             ingredients.Add("ketchup");
             TestRepo.CreateMenuItem(1, "Burger", "Meat on bread", ingredients, .99);
             // Dictionary<int, MealItem> controlRepo = new Dictionary<int, MealItem>();
-            // Ugh I'm leaving this incomplete for now
+            // I see the problem, I made a repo for the unit test, instead of a dictionary of meal items
         }
     }
 }
