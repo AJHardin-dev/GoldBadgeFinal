@@ -13,3 +13,5 @@ C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\03Badges.Test\obj\
 C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\03Badges.Test\obj\Debug\03Badges.Test.csproj.CopyComplete
 C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\03Badges.Test\obj\Debug\03Badges.Test.dll
 C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\03Badges.Test\obj\Debug\03Badges.Test.pdb
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\03Badges.Test\bin\Debug\03Badges.Lib.dll
+C:\Work\ElevenFiftyProjects\Projects\GoldBadge\GoldBadgeFinal\03Badges.Test\bin\Debug\03Badges.Lib.pdb

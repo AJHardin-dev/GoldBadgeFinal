@@ -19,7 +19,7 @@ namespace _03Badges.Lib
             else return false;
         }
 
-        public bool CreateBadge(int id, List<string> doorNames, string badgeName)
+        public bool CreateBadge(int id, string doorNames, string badgeName)
         {
             if (!_badges.ContainsKey(id))
             {
@@ -65,7 +65,5 @@ namespace _03Badges.Lib
             }
             else return false;
         }
-
-
     }
 }
